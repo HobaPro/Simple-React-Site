@@ -1,0 +1,16 @@
+.fa-chess-knight{
+    font-size: 46px;
+}
+
+@media  (max-width: 960px) {
+    .fa-chess-knight{
+        font-size: 36px;
+    }
+}
+
+i{
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 111;
+}

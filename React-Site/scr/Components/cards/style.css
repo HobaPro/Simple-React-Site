@@ -1,0 +1,33 @@
+main{
+    width: 100%;
+    background-color: #fff;
+}
+
+main > .main-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main > .main-flex > h1{
+    font-size: 40px;
+    color: #242424;
+}
+
+main > .main-flex > .cards-wrapper{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/* responsivity */
+
+@media screen and (max-width: 960px) {
+    main > .main-flex > .cards-wrapper{
+        flex-direction: column;
+    }
+}

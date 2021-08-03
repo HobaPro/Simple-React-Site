@@ -1,0 +1,74 @@
+.card-items{
+    margin: 1%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+.biggerThan{
+    width: 40%;
+}
+.smallerThan{
+    width: 25%;
+}
+.card-items > .cards-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-items > .cards-flex > a{
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+}
+.card-items > .cards-flex > a > figure{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    overflow: hidden;
+}
+.card-items > .cards-flex > a > figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+.card-items > .cards-flex > a > figure > img:hover{transform: scale(1.1)}
+.card-items > .cards-flex > a > h3{
+    color: #242424;
+    font-size: 26px;
+    padding: 10px;
+}
+
+.card-items > .cards-flex > a > figure::after{
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    background-color: #1f98f4;
+    color: #fff;
+}
+
+
+/* responsivity */
+
+@media screen and (max-width: 960px) {
+    .card-items{
+        width: 60%;
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-items{
+        width: 90%;
+        margin: 30px;
+    }
+}
